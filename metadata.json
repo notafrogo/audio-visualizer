@@ -1,0 +1,8 @@
+{
+  "uuid": "audio-visualizer@ayan",
+  "name": "Audio Visualizer",
+  "description": "A full-width audio visualizer using cava.",
+  "version": "1.0",
+  "max-instances": 10,
+  "prevent-decorations": true
+}

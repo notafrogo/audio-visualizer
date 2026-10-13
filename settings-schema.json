@@ -1,0 +1,85 @@
+{
+    "layout": {
+        "type": "layout",
+        "pages": ["page1"],
+        "page1": {
+            "type": "page",
+            "title": "Visualizer Settings",
+            "sections": ["section_appearance", "section_audio"]
+        },
+        "section_appearance": {
+            "type": "section",
+            "title": "Appearance &amp; Performance",
+            "keys": ["bar-color", "num-bars", "max-height", "framerate", "opacity", "orientation"]
+        },
+        "section_audio": {
+            "type": "section",
+            "title": "Audio Input",
+            "keys": ["audio-source"]
+        }
+    },
+    "bar-color": {
+        "type": "colorchooser",
+        "default": "rgba(0,255,255,0.7)",
+        "description": "Bar Color",
+        "section": "section_appearance"
+    },
+    "num-bars": {
+        "type": "spinbutton",
+        "default": 120,
+        "min": 10,
+        "max": 500,
+        "step": 10,
+        "description": "Number of visualizer bars",
+        "section": "section_appearance"
+    },
+    "max-height": {
+        "type": "spinbutton",
+        "default": 250,
+        "min": 50,
+        "max": 1080,
+        "step": 10,
+        "description": "Maximum height of bars (pixels)",
+        "section": "section_appearance"
+    },
+    "framerate": {
+        "type": "spinbutton",
+        "default": 30,
+        "min": 15,
+        "max": 144,
+        "step": 5,
+        "description": "Update framerate (cava)",
+        "section": "section_appearance"
+    },
+    "opacity": {
+        "type": "scale",
+        "default": 70,
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "description": "Bar Opacity (%)",
+        "section": "section_appearance"
+    },
+    "orientation": {
+        "type": "combobox",
+        "default": "bottom-to-top",
+        "description": "Orientation",
+        "options": {
+            "Bottom to Top (Right Side Up)": "bottom-to-top",
+            "Top to Bottom (Upside Down)": "top-to-bottom",
+            "Left to Right (Vertical)": "left-to-right",
+            "Right to Left (Vertical)": "right-to-left"
+        },
+        "section": "section_appearance"
+    },
+    "audio-source": {
+        "type": "combobox",
+        "default": "output",
+        "description": "Audio Source",
+        "options": {
+            "Output (Speakers)": "output",
+            "Input (Microphone)": "input"
+        },
+        "section": "section_audio"
+    }
+}
